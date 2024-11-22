@@ -4,26 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lemo | Pagina Inicial</title>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./estilos/estilo_geral.css">
 </head>
 <body>
     <header>
         <div class="logo-lemo" id="lemo-logo">
-            <a href="#">Lemo</a>
+            <a class="logo-item" href="./index.html">
+                <img src="./design logo/logo principal.png" alt="logo">
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li>Iniciar Seccao</li>
-                <li>Registar</li>
-                <ul>
-                    <li>Chat</li>
-                </ul>
+        <nav class="menu-btn-reg-inits-cht">
+            <ul class="content-form-btn">
+                <li>
+                    <ul  class="session-register">
+                        <li><a href="./formulario/iniciar_secao.html" class="btninit-session link-btn-menu">Iniciar Seccao</a></li></li>
+                        <li><a href="./formulario/registrar.html" class="btn-registrar link-btn-menu">Registar</a></li>
+                    </ul>
+                </li>
+                <li class="content-chat-btn">
+                    <ul>
+                        <li><a href="" class="btn-chat link-btn-menu">Chat</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="room-outdour" id="outdour">
-            <div class="window-search"></div>
-            <div class="window-logo-left"></div>
+            <div class="window-search question-block-cmp">
+                <h1 class="text-tlt-quest">Apreena com o lemo <br /> e com os seus amigos</h1>
+                <form action="#" class="form-question-main">
+                    <h3 class="text-tlt-form-quest">Faça a sua pergunta</h3>
+                    <div class="search-field">
+                        <input type="text" name="procuraPergunta" id="campoPergunta">
+                        <button type="submit" class="btn-submit-question" value="sub">
+                            <i class="icon-fin">&rarr;</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="window-logo-left question-block-cmp">
+                <img src="./design logo/imagem logo main.png" alt="imagem do learn more">
+            </div>
         </div>
 
         <div class="html-css-field" id="htmlCss">
