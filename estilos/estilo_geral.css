@@ -49,7 +49,14 @@ body
 
 /*====Definindo Globais semelhantes====*/
 /*=====================================*/
-header, .content-form-btn, .menu-btn-reg-inits-cht, .session-register, .room-outdour, .search-field
+header, 
+.content-form-btn, 
+.menu-btn-reg-inits-cht, 
+.session-register, 
+.room-outdour, 
+.search-field,
+.mt-fl,
+.mini-info
 {
   display: flex;
   align-items: center;
@@ -185,4 +192,130 @@ header
 .window-logo-left img
 {
   width: 70%;
+}
+
+
+/*====Configurando estilos do div(materias)=====*/
+/*==============================================*/
+.ec-mn-fl
+{
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;
+}
+
+.mt-fl
+{
+  border: 1px solid;
+  border-radius: 20px;
+  justify-content: space-between;
+  width: 70%;
+  height: 340px;
+  margin: 0px auto;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.mt-fl h1
+{
+  text-align: center;
+  font-family: poppinsBold;
+  font-size: 4rem;
+  width: 50%;
+}
+
+.html-field
+{
+  border-color: blue;
+}
+
+.css-field
+{
+  border-color: orangered;
+}
+
+.mt-fl h1.html-tlt-mt
+{
+  color: blue;
+}
+
+.min-menu-html
+{
+  background-color: #2424e1;
+  color: #e3d9d9;
+}
+
+.mt-fl h1.css-tlt-mt
+{
+  color: orangered;
+}
+
+.min-menu-css
+{
+  background-color: orangered;
+  color: #e3d9d9;
+}
+
+.mn-mu-ht
+{
+  border-radius: 20px 0px 0px 20px;
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+}
+
+.inf-tlt
+{
+  font-size: 1.3rem;
+  font-family: poppinsLight;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  letter-spacing: 2px;
+}
+
+.mini-info
+{
+  justify-content: space-between;
+}
+
+.col-inf
+{
+
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin-top: 5px;
+}
+
+.col-btn-inf a
+{
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: #fff;
+  border: 1px solid;
+  border-radius: var(--border-radius-pixels);
+  padding: 7px 25px;
+  margin-right: 50px;
+}
+
+.btn-inf-html a
+{
+  border-color: orangered;
+}
+.btn-inf-html a:hover
+{
+  border: none;
+  background-color: orangered;
+}
+
+.btn-inf-css a
+{
+  border-color: blue;
+}
+.btn-inf-css a:hover
+{
+  border: none;
+  background-color: #2424e1;
 }
