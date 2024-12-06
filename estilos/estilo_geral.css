@@ -434,6 +434,12 @@ header
 =============================
 ====Rodape
 */
+.rd-fn
+{
+  height: max-content;
+  padding: 20px;
+}
+
 .rd-fn .abb-cl-itm
 {
   width: 100%;
@@ -445,8 +451,45 @@ header
 
 .cl-ft-en
 {
-  background-color: red;
   width: 400px;
   height: 400px;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
+  position: relative;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.itm-lk-i
+{
+  color: #eee;
+  padding: 5px;
+  margin-top: 3px;
+  width: 70%;
+  position: relative;
+}
+
+.itm-lk-i:hover
+{
+  cursor: pointer;
+  color: #222;
+  background-color: #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.itm-lk-i::before
+{
+  content: "";
+  background-color: rgb(148, 148, 200);
+  height: 5px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.itm-lk-i:hover::before
+{
+  width: 100%;
+  transition: .8s;
 }
