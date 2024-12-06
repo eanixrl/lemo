@@ -47,6 +47,11 @@ body
   overflow: hidden scroll;
 }
 
+main
+{
+  background-image: linear-gradient(#ececec, #333340);
+}
+
 /*====Definindo Globais semelhantes====*/
 /*=====================================*/
 header, 
@@ -318,4 +323,130 @@ header
 {
   border: none;
   background-color: #2424e1;
+}
+
+/*
+==================================
+==================================
+====Class de bottoes materias
+*/
+.rm-opn
+{
+  background-image: linear-gradient(#fd6731, #5252fe);
+  width: 100%;
+  height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rm-opn
+{
+  border-radius: 0px 50px 50px 0px;
+  width: 90%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.col-rm
+{
+  width: 50%;
+  padding: 50px;
+}
+
+.tlt-rm-2
+{
+  font-size: 2rem;
+  color: #444;
+  letter-spacing: 2px;
+}
+.tlt-sm-rm
+{
+  color: #eeee;
+  margin: 10px 0px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.add-col-lk
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itm-col-lk
+{
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: var(--border-radius-pixels);
+  padding: 10px 50px;
+  width: max-content;
+  margin: 10px;
+}
+
+.ser-rm
+{
+  border: 1px solid blue;
+  border-radius: var(--border-radius-pixels);
+  overflow: hidden;
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.ser-rm input[type="search"]
+{
+  display: inline;
+  height: 100%;
+  width: 250px;
+}
+
+.ser-rm input[type="submit"]
+{
+  display: inline;
+  cursor: pointer;
+}
+
+.ser-rm input[type="search"],
+.ser-rm input[type="submit"]
+{
+  padding: 10px 20px;
+}
+
+.tub
+{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: animeBack 3s infinite;
+}
+
+@keyframes animeBack {
+}
+
+
+/*
+=============================
+=============================
+====Rodape
+*/
+.rd-fn .abb-cl-itm
+{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cl-ft-en
+{
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
 }
