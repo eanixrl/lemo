@@ -71,7 +71,7 @@ header,
 /*=======================================*/
 header
 {
-  background-color: rgb(255, 238, 228);
+  background-color: #42455d;
   width: 100%;
   height: 15vh;
   padding: 10px 50px;
@@ -108,7 +108,7 @@ header
 
 .link-btn-menu
 {
-  color: var(--color-text-normal);
+  color: #eee;
   font-size: 1rem;
   font-family: poppinsBold;
   letter-spacing: 2px;
@@ -417,15 +417,30 @@ header
 
 .tub
 {
+  background-color: #ffa393c6;
+  background-image: url("./gui-cil-back-learn.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: animeBack 3s infinite;
 }
 
-@keyframes animeBack {
+.tub h1
+{
+  color: #090129;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #00000030;
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
