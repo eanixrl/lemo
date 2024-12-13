@@ -41,6 +41,7 @@
 
 body
 {
+  background-color: #ececec;
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
@@ -67,14 +68,29 @@ header,
   align-items: center;
 }
 
+@media (max-width: 470px) {
+  header, 
+  .content-form-btn, 
+  .menu-btn-reg-inits-cht, 
+  .session-register, 
+  .room-outdour,
+  .mt-fl,
+  .mini-info
+  {
+    display: block;
+  }
+
+}
+
 /*====Configurando estilos do header=====*/
 /*=======================================*/
 header
 {
-  background-color: #42455d;
+  background-color: transparent;
   width: 100%;
   height: 15vh;
   padding: 10px 50px;
+  position: relative;
 }
 
 .logo-lemo
@@ -87,9 +103,55 @@ header
   width: 200px;
 }
 
+@media (max-width: 470px) {
+  .logo-lemo a.logo-item img
+  {
+    width: 100px;
+  }
+}
+
 .menu-btn-reg-inits-cht
 {
   width: 70%;
+}
+
+.btn-hamburgue
+{
+  display: none;
+}
+
+@media (max-width: 470px) {
+  .btn-hamburgue
+  {
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    top: 30%;
+    right: 30px;
+  }
+
+  .btn-hamburgue::before
+  {
+    content: "";
+    border-top: 4px solid red;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+  .btn-hamburgue::before
+  {
+    content: "";
+    border-bottom: 4px solid red;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+  }
+
 }
 
 
@@ -101,6 +163,14 @@ header
   padding: 10px;
 }
 
+@media (max-width: 470px)
+{
+  .content-form-btn
+  {
+    display: none;
+  }
+}
+
 .btn-registrar
 {
   margin-left: 70px;
@@ -108,7 +178,7 @@ header
 
 .link-btn-menu
 {
-  color: #eee;
+  color: #222;
   font-size: 1rem;
   font-family: poppinsBold;
   letter-spacing: 2px;
@@ -129,6 +199,19 @@ header
   overflow: hidden;
 }
 
+@media (max-width: 470px) {
+  .room-outdour
+  {
+    display: block;
+    padding: 10px 10px;
+  }
+
+  .window-logo-left
+  {
+    display: none;
+  }
+}
+
 .question-block-cmp
 {
   width: 50%;
@@ -144,7 +227,7 @@ header
 {
   width: max-content;
   margin-top: 20px;
-
+  
 }
 
 .text-tlt-form-quest
@@ -170,6 +253,28 @@ header
   border-radius: 100px 0px 0px 100px;
   padding: 9px 5px 9px 15px;
   width: 80%;
+}
+@media (max-width: 470px) {
+  .question-block-cmp
+  {
+    width: 100%;
+  }
+  
+  .text-tlt-quest
+  {
+    color: var(--color-text-normal);
+    font-size: 2rem;
+  }
+
+  .search-field input[type="text"]
+  {
+    width: 220px;
+  }
+
+  .search-field
+  {
+    width: 100%;
+  }
 }
 
 .search-field button[type="submit"]
@@ -219,6 +324,14 @@ header
   margin: 0px auto;
   margin-top: 100px;
   overflow: hidden;
+}
+
+@media (max-width: 470px) {
+  .mt-fl
+  {
+    display: block;
+  }
+
 }
 
 .mt-fl h1
